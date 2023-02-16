@@ -2348,6 +2348,7 @@ dependencies = [
  "moon_terminal",
  "moon_test_utils",
  "moon_tool",
+ "moon_typescript_lang",
  "moon_utils",
  "proto",
  "rustc-hash",
@@ -2808,7 +2809,9 @@ name = "moon_typescript_lang"
 version = "0.1.0"
 dependencies = [
  "cached",
+ "moon_config",
  "moon_error",
+ "moon_hasher",
  "moon_lang",
  "moon_logger",
  "moon_test_utils",
