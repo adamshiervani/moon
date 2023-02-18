@@ -1,8 +1,11 @@
 images:
+  envs:
+    PATH: /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin:/.cargo/bin
   rust:
     base_image: ubuntu-22.04-github
     tasks:
       - env
+      - nvm ls
     rebuild:
       on_base_image_change: true
       on_file_change: '**/Cargo.lock' # rebuild when Cargo.lock cha  nges
