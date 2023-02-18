@@ -23,7 +23,7 @@ tasks:
   - unset TERM
   - cat ~/.bashrc
   - cat ~/.bash_aliases
-  - #  - ls $NVM_DIR
+#  -  - ls $NVM_DIR
   - command: |
       unset TERM
       chmod +x "/home/runner/.nvm/nvm.sh"
