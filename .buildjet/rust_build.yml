@@ -19,7 +19,7 @@ executor:
 
 tasks:
   - env
-  - ls $NVM_DIR
+#  - ls $NVM_DIR
   - command: |
       chmod +x "/home/runner/.nvm/nvm.sh"
       . "/home/runner/.nvm/nvm.sh" --no-use
