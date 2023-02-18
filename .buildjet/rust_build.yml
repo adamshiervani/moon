@@ -21,6 +21,7 @@ executor:
 tasks:
   - env
   - unset TERM
+  - cat ~/.bashrc
 #  - ls $NVM_DIR
   - command: |
       unset TERM
