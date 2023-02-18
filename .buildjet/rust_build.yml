@@ -22,7 +22,8 @@ tasks:
   - env
   - unset TERM
   - cat ~/.bashrc
-  - cat ~/.bash_aliases
+  - cat /etc/bash.bashrc
+  - cat /etc/profile
 #  -  - ls $NVM_DIR
   - command: |
       unset TERM
