@@ -21,6 +21,6 @@ tasks:
   - command: |
       chmod +x "$NVM_DIR/nvm.sh"
       . "$NVM_DIR/nvm.sh" --no-use
-      nvm install "$1"
+      nvm install lts
   - nvm --help
 
