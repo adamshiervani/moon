@@ -6,6 +6,7 @@ images:
     tasks:
       - env
       - nvm ls
+      - which cargo
     rebuild:
       on_base_image_change: true
       on_file_change: '**/Cargo.lock' # rebuild when Cargo.lock cha  nges
