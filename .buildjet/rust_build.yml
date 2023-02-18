@@ -17,4 +17,4 @@ executor:
   hardware: x86-4vcpu
 
 tasks:
-  - cargo make lint
+  - nvm --help
