@@ -18,9 +18,9 @@ executor:
   hardware: x86-4vcpu
 
 tasks:
-  - nvm --help
   - command: |
       chmod +x "$NVM_DIR/nvm.sh"
       . "$NVM_DIR/nvm.sh" --no-use
       nvm install "$1"
+  - nvm --help
 
