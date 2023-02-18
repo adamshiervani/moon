@@ -1,12 +1,8 @@
 images:
   rust:
-    base_image: ubuntu-22.04-github # includes node v16 
+    base_image: ubuntu-22.04-github
     tasks:
-      - rustup toolchain install 1.66.0
-      - rustup default 1.66.0
-      - rustup component add rustfmt
-      - cargo fetch
-      - cargo install --force cargo-make
+      - env
     rebuild:
       on_base_image_change: true
       on_file_change: '**/Cargo.lock' # rebuild when Cargo.lock cha  nges
