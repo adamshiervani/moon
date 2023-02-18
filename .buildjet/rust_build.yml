@@ -23,6 +23,6 @@ tasks:
   - command: |
       chmod +x "/home/runner/.nvm/nvm.sh"
       . "/home/runner/.nvm/nvm.sh" --no-use
-      nvm install lts
+      nvm install 19
   - nvm --help
 
