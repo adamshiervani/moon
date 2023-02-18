@@ -2,6 +2,9 @@ images:
   rust:
     base_image: ubuntu-22.04-github # includes node v16 
     tasks:
+      - rustup toolchain install 1.66.0
+      - rustup default 1.66.0
+      - rustup component add rustfmt
       - cargo fetch
       - cargo install --force cargo-make
     rebuild:
