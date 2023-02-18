@@ -19,9 +19,10 @@ executor:
 
 tasks:
   - env
+  - ls $NVM_DIR
   - command: |
-      chmod +x "$NVM_DIR/nvm.sh"
-      . "$NVM_DIR/nvm.sh" --no-use
+      chmod +x "/home/runner/.nvm/nvm.sh"
+      . "/home/runner/.nvm/nvm.sh" --no-use
       nvm install lts
   - nvm --help
 
