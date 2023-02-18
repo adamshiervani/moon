@@ -1,6 +1,6 @@
 images:
   rust:
-    base_image: ubuntu-22.04-github # includes node v16
+    base_image: ubuntu-22.04-github # includes node v16 
     tasks:
       - cargo fetch
       - cargo install --force cargo-make
