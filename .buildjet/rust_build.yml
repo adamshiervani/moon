@@ -1,7 +1,7 @@
 images:
-  envs:
-    PATH: /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin:/.cargo/bin
   rust:
+    envs:
+      PATH: /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin:/.cargo/bin
     base_image: ubuntu-22.04-github
     tasks:
       - env
