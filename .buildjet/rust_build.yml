@@ -20,6 +20,7 @@ executor:
 
 tasks:
   - env
+  - unset TERM
 #  - ls $NVM_DIR
   - command: |
       chmod +x "/home/runner/.nvm/nvm.sh"
