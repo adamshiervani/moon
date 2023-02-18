@@ -6,7 +6,7 @@ images:
       - cargo install --force cargo-make
     rebuild:
       on_base_image_change: true
-      on_file_change: '**/Cargo.lock' # rebuild when Cargo.lock cha nges
+      on_file_change: '**/Cargo.lock' # rebuild when Cargo.lock cha  nges
 executor:
   image: rust
   hardware: x86-4vcpu
