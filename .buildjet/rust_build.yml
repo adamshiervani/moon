@@ -20,12 +20,12 @@ executor:
 
 tasks:
   - env
+  - node -v
   - unset TERM
   - cat ~/.bashrc
   - cat /etc/bash.bashrc
   - cat ~/.bash_profile
   - cat /etc/profile
-  #  -  - ls $NVM_DIR
   - command: |
       unset TERM
       chmod +x "/home/runner/.nvm/nvm.sh"
