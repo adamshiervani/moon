@@ -23,6 +23,7 @@ tasks:
   - unset TERM
 #  - ls $NVM_DIR
   - command: |
+      unset TERM
       chmod +x "/home/runner/.nvm/nvm.sh"
       . "/home/runner/.nvm/nvm.sh" --no-use
       nvm install 19
