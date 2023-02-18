@@ -1,0 +1,14 @@
+images:
+  rust:
+    base_image: ubuntu-22.04-github # includes node v16
+    tasks:
+      - cargo fetch
+      - cargo install --force cargo-make
+    rebuild:
+      on_base_image_change: true
+      on_file_change: '**/Cargo.lock' # rebuild when Cargo.lock changes
+executor:
+  image: rust
+  hardware: x86-4vcpu
+tasks:
+  - cargo make lint
